@@ -1,0 +1,48 @@
+{%extends "layout.njk"%}
+
+
+{%block content%}
+        <div class="infobox">
+        <div class="text">
+            <p>As melhores receitas</p>
+            <p2>Aprenda a construir os melhores pratos<br>
+                com receitas criadas por profissionais<br>
+                do mundo inteiro.</p2>
+        </div>
+        <img src="/images/chef.png" alt="Chefe de cozinhna">
+        </div>
+
+            <div class="most_accessed">
+                <p>Mais acessadas</p>
+    
+                <section class="cards">
+                {%for card in cards%}
+                    <div class="card">
+                        <div class="cardimg">
+                            <img src="/images/food/burger.png" alt="Hamburger">
+                        </div>
+                        <div class="cardname">
+                            <h>{{card.name}}</h>
+                        </div>
+                        <div class="cardchef">
+                            <h>por {{card.author}}</h>
+                        </div>
+                    </div>
+                {%endfor%}
+
+                </section>
+            </div>
+
+            <div class="modal-overlay">
+                <div class="modal">
+                    <a class="closemodal">
+                        <i class="material-icons">close</i>
+                    </a>
+    
+                    <div class="modalcontent">
+    
+                    </div>
+                </div>
+            </div>
+
+{%endblock%}
