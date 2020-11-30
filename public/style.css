@@ -139,19 +139,44 @@ section.cards{
 .modal{
     background-color: #FFFFFF;
     border-radius: 16px;
-    width: 69vw;
-    height: 42vh;
     max-width: 660px;
     max-height: 413px;
-    margin: 10vh auto;
+    margin: 22vh auto;
     position: relative;
 }
+
+.modal-overlay .modal img{
+    border-radius: 15px;
+    padding: 30px 0 100px 0 0;
+    width: 600px;
+    height: 200px;
+    position: relative;
+    margin: 0 0 0 1.5vw;
+}
+
+.modalcontent .cardname{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #111111;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.modalcontent .cardchef{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #777777;
+    text-align: center;
+}
+
+/*CLOSEMODAL*/
 
 .modal .close-modal {
     cursor: pointer;
     color: black;
-    position: absolute;
     bottom: 40px;
+    position: relative;
+    margin: 0 auto;
     
 }
 

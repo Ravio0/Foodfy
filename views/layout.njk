@@ -30,16 +30,23 @@
             </div>
     </footer>
 
+{%for item in items%}
     <div class="modal-overlay">
-        <div class="modal">
+        <div class="modal" id="">
+
+            <div class="modalcontent">
+                <img src="/images/food/{{item.img}}">
+                <div class="cardname">{{item.title}}</div>
+                <div class="cardchef">por {{item.chef}}</div>
+            </div>
+
             <a class="close-modal">
                 <i class="material-icons">close</i>
             </a>
 
-            <div class="modalcontent"></div>
-
         </div>
     </div>
+{%endfor%}
 
     <script src="/script.js"></script>
 
