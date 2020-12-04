@@ -18,8 +18,8 @@
 <body>
     <header>
             <a class='linklogo' href="/"><img src="/images/logo.png" alt="Logo Foodfy"></a>
-            <a class='link1' href="about">Sobre</a>
-            <a class='link2' href="recipes">Receitas</a>
+            <a class='link1' href="about">{%block strong1%}Sobre{%endblock%}</a>
+            <a class='link2' href="recipes">{%block strong2%}Receitas{%endblock%}</a>
     </header>
 
     {%block content%}{%endblock%}
@@ -30,14 +30,13 @@
             </div>
     </footer>
 
-{%for item in items%}
     <div class="modal-overlay">
-        <div class="modal" id="">
+        <div class="modal">
 
             <div class="modalcontent">
-                <img src="/images/food/{{item.img}}">
-                <div class="cardname">{{item.title}}</div>
-                <div class="cardchef">por {{item.chef}}</div>
+                <img src="">
+                <div class="cardname"></div>
+                <div class="cardchef"></div>
             </div>
 
             <a class="close-modal">
@@ -46,7 +45,6 @@
 
         </div>
     </div>
-{%endfor%}
 
     <script src="/script.js"></script>
 

@@ -94,13 +94,11 @@ header{
 section.cards{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    padding: 15px 25vw 0 21.5vw;
-    gap: 10px;
+    padding: 15px 23vw 0 21.5vw;
+    gap: 30px;
 }
 
 .card{
-    width: 300px;
-    height: 210px;
     position: relative;
     cursor: pointer;
 }

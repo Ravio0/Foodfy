@@ -24,7 +24,16 @@ server.get('/about', function(req, res) {
     return res.render('about')
 })
 
+server.get('/recipes', function(req,res){
+    return res.render('recipes', {items:recipes})
+})
 
+server.get("/recipes/:index", function (req, res) {
+    const recipes = [2]; // Array de receitas carregadas do data.js
+    const recipeIndex = req.params.index;
+  
+    console.log(recipes[recipeIndex]);
+  })
 
 server.listen(5000, function(){
     console.log("server is running")
